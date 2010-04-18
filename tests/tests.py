@@ -3,15 +3,13 @@ import os
 import unittest
 import exceptions
 
-### setup path for load library
-sys.bytecodebase = None
 sys.path.append('result')
-
 import cronkite
 
 class TestCases(unittest.TestCase):
     def setUp(self):
-        cronkite.setopt('AURURL', os.environ['CRONKITE_AURURL'])
+        cronkite.setopt('AURURL', "file://%s/example.json" % 
+            os.path.dirname(os.path.realpath(__file__)))
 
     def test_example(self):
         """Perform a test query, and validate results"""
