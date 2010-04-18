@@ -11,7 +11,7 @@ cronkite = Extension(
 
 setup(
     name = 'PyCronkite-c',
-    version = '0.5.1',
+    version = '0.6',
     description = 'python module (in c) for libcronkite',
     url = 'http://github.com/cactus/pycronkite',
     license="http://www.apache.org/licenses/LICENSE-2.0",
