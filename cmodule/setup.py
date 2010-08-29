@@ -14,7 +14,7 @@ setup(
     version = '0.6',
     description = 'python module (in c) for libcronkite',
     url = 'http://github.com/cactus/pycronkite',
-    license="http://www.apache.org/licenses/LICENSE-2.0",
+    license="MIT",
     ext_modules = [cronkite],
     cmdclass = {'test': TestCommand})
 
