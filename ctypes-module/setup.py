@@ -7,8 +7,8 @@ setup(
     name = 'PyCronkite-ctypes',
     version = '0.6',
     description = 'python module (ctypes) for libcronkite',
-    url = 'http://github.com/cactus/cronkite',
+    url = 'http://github.com/cactus/pycronkite',
     license="MIT",
-    py_modules = ['cronkite'],
+    py_modules = ['pycronkite'],
     cmdclass = {'test': TestCommand})
 
