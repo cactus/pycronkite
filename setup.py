@@ -1,12 +1,10 @@
 from distutils.core import setup, Extension
-import sys
-sys.path.append('..')
 from tests import TestCommand
 
-cronkite = Extension(
-    "cronkite",
+pycronkite = Extension(
+    "pycronkite",
     libraries = ['cronkite'],
-    sources = ['pycronkite.c'],
+    sources = ['src/pycronkite.c'],
     language = 'c')
 
 setup(
@@ -15,6 +13,6 @@ setup(
     description = 'python module (in c) for libcronkite',
     url = 'http://github.com/cactus/pycronkite',
     license="MIT",
-    ext_modules = [cronkite],
+    ext_modules = [pycronkite],
     cmdclass = {'test': TestCommand})
 

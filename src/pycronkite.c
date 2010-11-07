@@ -119,10 +119,10 @@ static PyMethodDef CRONKITE_METHODS[] = {
     {NULL, NULL, 0, NULL} /* sentinel */
 };
 
-PyMODINIT_FUNC initcronkite(void) {
+PyMODINIT_FUNC initpycronkite(void) {
     PyObject *m;
 
-    m = Py_InitModule3("cronkite", CRONKITE_METHODS, 
+    m = Py_InitModule3("pycronkite", CRONKITE_METHODS, 
         "aur search library\n");
 
     if (m == NULL)

@@ -24,7 +24,6 @@ Building
 
 ::
 
-    $ cd cmodule
     $ python setup.py build
 
 
